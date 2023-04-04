@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com">
+</script>
+<style>
+    .text-customGray {
+        color: #797E7F;
+    }
+    .text-customBlue {
+        color: #002054;
+    }
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    ::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+     
+    /* Show scrollbar for IE, Edge and Firefox  in desktop */
+    @media screen and (max-width: 768px) {
+        ::-webkit-scrollbar {
+      width: 0px;
+      height: 0px;
+      background-color: transparent;
+      -ms-overflow-style: none;
+    scrollbar-width: none;
+    }
+    }
+</style>
+</head>
+<body class="font-roboto w-screen flex flex-col h-screen ">
+    <div>
+        <nav class="flex items-center justify-between flex-wrap bg-white border-b-10 border-blue-500 py-3 px-6" style="border-bottom: 5px solid #FFA200;">
+          <div class="flex items-center flex-shrink-0 text-customGray mr-6">
+            <img src="./logo.svg" alt="logo" class="h-10 w-10 fill-current text-customBlue">
+          </div>
+        </nav>
+        <div class="flex items-center justify-center my-2">
+          <a class="flex mx-3 mt-1"  href="../Pagina 3/index.html">
+            <img src="./arrowLeft.svg" alt="arrow left" class="h-6 w-6" >
+          </a>
+          <div>
+            <h2 class="text-2xl font-thin">Ajusta tú horario</h2>
+          </div>
+          <a class="flex mx-3 mt-1"  href="../Pagina 5/index.html">
+            <img src="./arrowRight.svg" alt="arrow right" class="h-6 w-6" >
+          </a>
+        </div>
+    </div>
+    
+        <!--codigo del chuye-->
+  </body>
+</html>

@@ -1,0 +1,156 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com">
+</script>
+<style>
+    .text-customGray {
+        color: #797E7F;
+    }
+    .text-customBlue {
+        color: #002054;
+    }
+
+    .badge { 
+        border-radius: 20px; padding: 5px 20px; 
+    }
+
+    .badge:hover {
+        background-color: #54d14b;
+        color: white;
+    }
+
+    .badge:focus {
+        outline: none;
+    }
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    ::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+     
+    /* Show scrollbar for IE, Edge and Firefox  in desktop */
+    @media screen and (max-width: 768px) {
+        ::-webkit-scrollbar {
+      width: 0px;
+      height: 0px;
+      background-color: transparent;
+      -ms-overflow-style: none;
+    scrollbar-width: none;
+    }
+    }
+</style>
+</head>
+<body class="font-roboto w-screen flex flex-col h-screen ">
+    <div>
+        <nav class="flex items-center justify-between flex-wrap bg-white border-b-10 border-blue-500 py-3 px-6" style="border-bottom: 5px solid #54d14b;">
+          <div class="flex items-center flex-shrink-0 text-customGray mr-6">
+            <!-- Aquí iría el logo -->
+            <img src="./logo.svg" alt="logo" class="h-10 w-10 fill-current text-customBlue">
+          </div>
+          <div class="flex items-center">
+            <div class="relative">
+              <input class="block w-full max-w-xs px-4 py-2 text-gray-900 placeholder-gray-500 border borde-none bg-gray-100 rounded-lg focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm" type="search" name="search" placeholder="Buscar">
+              <button type="submit" class="absolute right-0 top-0 mt-3 mr-4">
+                <img src="./search.svg" alt="search" class="h-4 w-4 fill-current text-gray-500">
+              </button>
+            </div>
+          </div>
+        </nav>
+        <div class="flex items-center justify-center my-2">
+          <a class="flex mx-3 mt-1" href="../Pagina 2/index.html">
+            <img src="./arrowLeft.svg" alt="arrow left" class="h-6 w-6" >
+          </a>
+          <div>
+            <h2 class="text-2xl font-thin">Selecciona tus asignaturas</h2>
+          </div>
+          <a class="flex mx-3 mt-1" href="../Pagina 4/index.html">
+            <img src="./arrowRight.svg" alt="arrow right" class="h-6 w-6" >
+          </a>
+        </div>
+        <div class="flex overflow-x-auto bg-white py-4 px-2 lg:justify-center whitespace-nowrap scrollbar-width: none;" style="width: 100%;">
+            <a href="#" class="inline-flex bg-gray-100 items-center mx-2 text-sm font-medium text-gray-600 hover:text-white badge">Carrera 1</a>
+            <a href="#" class="inline-flex bg-gray-100 items-center mx-2 text-sm font-medium text-gray-600 hover:text-white badge">Carrera 2</a>
+        </div>
+    </div>
+          <div class="flex-1 overflow-y-auto">
+            <ul class=" grid grid-cols-1 md:grid-cols-2 gap-4 p-2">
+                <li class="bg-gray-100 rounded-lg p-4 flex flex-col ">
+                  <div class="text-md font-semibold ">Curso 1</div>
+                  <div class="text-sm text-gray-500">Carrera 1</div>
+                </li>
+                <li class="bg-gray-100 rounded-lg p-4 flex flex-col">
+                  <div class="text-md font-semibold ">Curso 2</div>
+                  <div class="text-sm text-gray-500">Carrera 1</div>
+                </li>
+                <li class="bg-gray-100 rounded-lg p-4 flex flex-col">
+                  <div class="text-md font-semibold ">Curso 3</div>
+                  <div class="text-sm text-gray-500">Carrera 1</div>
+                </li>
+                <li class="bg-gray-100 rounded-lg p-4 flex flex-col">
+                  <div class="text-md font-semibold ">Curso 4</div>
+                  <div class="text-sm text-gray-500">Carrera 2</div>
+                </li>
+                <li class="bg-gray-100 rounded-lg p-4 flex flex-col">
+                  <div class="text-md font-semibold ">Curso 5</div>
+                  <div class="text-sm text-gray-500">Carrera 2</div>
+                </li>
+                <li class="bg-gray-100 rounded-lg p-4 flex flex-col">
+                  <div class="text-md font-semibold ">Curso 6</div>
+                  <div class="text-sm text-gray-500">Carrera 2</div>
+                </li>
+                <li class="bg-gray-100 rounded-lg p-4 flex flex-col">
+                <div class="text-md font-semibold ">Curso 1</div>
+                <div class="text-sm text-gray-500">Carrera 1</div>
+              </li>
+              <li class="bg-gray-100 rounded-lg p-4 flex flex-col">
+                <div class="text-md font-semibold ">Curso 2</div>
+                <div class="text-sm text-gray-500">Carrera 1</div>
+              </li>
+              <li class="bg-gray-100 rounded-lg p-4 flex flex-col">
+                <div class="text-md font-semibold ">Curso 3</div>
+                <div class="text-sm text-gray-500">Carrera 1</div>
+              </li>
+              <li class="bg-gray-100 rounded-lg p-4 flex flex-col">
+                <div class="text-md font-semibold ">Curso 4</div>
+                <div class="text-sm text-gray-500">Carrera 2</div>
+              </li>
+              <li class="bg-gray-100 rounded-lg p-4 flex flex-col">
+                <div class="text-md font-semibold ">Curso 5</div>
+                <div class="text-sm text-gray-500">Carrera 2</div>
+              </li>
+              <li class="bg-gray-100 rounded-lg p-4 flex flex-col">
+                <div class="text-md font-semibold ">Curso 6</div>
+                <div class="text-sm text-gray-500">Carrera 2</div>
+              </li>
+              <li class="bg-gray-100 rounded-lg p-4 flex flex-col">
+                <div class="text-md font-semibold ">Curso 3</div>
+                <div class="text-sm text-gray-500">Carrera 1</div>
+              </li>
+              <li class="bg-gray-100 rounded-lg p-4 flex flex-col">
+                <div class="text-md font-semibold ">Curso 4</div>
+                <div class="text-sm text-gray-500">Carrera 2</div>
+              </li>
+              <li class="bg-gray-100 rounded-lg p-4 flex flex-col">
+                <div class="text-md font-semibold ">Curso 5</div>
+                <div class="text-sm text-gray-500">Carrera 2</div>
+              </li>
+              <li class="bg-gray-100 rounded-lg p-4 flex flex-col">
+                <div class="text-md font-semibold ">Curso 6</div>
+                <div class="text-sm text-gray-500">Carrera 2</div>
+              </li>
+              </ul>
+          </div>
+  </body>
+</html>
